@@ -1,10 +1,10 @@
-package com.eric.service;
+package aaa.eric.shop;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class EricServiceApplicationTests {
+class EricShopApplicationTests {
 
     @Test
     void contextLoads() {
