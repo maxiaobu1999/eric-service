@@ -8,11 +8,11 @@
         <version>3.2.4</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.eric.service</groupId>
-    <artifactId>eric-service</artifactId>
+    <groupId>com.eric.backend</groupId>
+    <artifactId>eric-backend</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>eric-service</name>
-    <description>eric-service</description>
+    <name>eric-backend</name>
+    <description>eric-backend</description>
     <packaging>pom</packaging>
 
     <modules>
@@ -77,6 +77,8 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-redis</artifactId>
         </dependency>
+
+
     </dependencies>
 
     <build>

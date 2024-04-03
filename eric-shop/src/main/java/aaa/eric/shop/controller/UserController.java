@@ -27,14 +27,14 @@ public class UserController {
 
 //	private final UserService userService;
 
-	@Resource(name = "jsonRedisTemplate")
-	private RedisTemplate<String, String> redisTemplate;
+//	@Resource(name = "jsonRedisTemplate")
+//	private RedisTemplate<String, String> redisTemplate;
 	private static RedisTemplate<String, String> staticRedisTemplate;
 
-	@PostConstruct
-	public void init() {
-		staticRedisTemplate = redisTemplate;
-	}
+//	@PostConstruct
+//	public void init() {
+//		staticRedisTemplate = redisTemplate;
+//	}
 
 	/**
 	 * 查看用户接口
@@ -44,7 +44,7 @@ public class UserController {
 		String src = String.valueOf(userId) + System.currentTimeMillis();
 //		String token = DigestUtil.md5(src);
 //		logger.info("生成token，userId:{}，token:{}", userId, token);
-		redisTemplate.opsForValue().set("123", "token");
+//		redisTemplate.opsForValue().set("123", "token");
 		return ServerResponseEntity.success("userDto");
 	}
 	
